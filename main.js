@@ -58,4 +58,25 @@ const posts = [
 
 
 //variabili globali
-const postsContainer = document.querySelector('#container');
+const likedList = []
+
+const postsContainer = document.getElementById('container');
+
+
+// inseriamo nell'html
+
+posts.forEach((post)=>{
+
+    //Prendo la data e la trasformo in formato europeo
+    const dateArray =  post.created.split('-')
+    const europeanDate = dateArray.reverse().join('-')
+
+    //immagine del profilo 
+
+    let profilePic;
+    profilePic = `<img class="profile-pic" src="${post.author.image}" alt="Phil Mangione"> `;
+
+        
+        
+
+            })
